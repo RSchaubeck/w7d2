@@ -1,0 +1,17 @@
+<% if edit %>
+  <% action = band_url(band) %>
+  <% button_text = "Update Band" %>
+<% else %>
+  <% action = bands_url %>
+  <% button_text = "Make Band" %>
+<% end %>
+
+<form action="<%= action %>" method="POST">
+  <%= auth_token %>
+  <% if edit %>
+    <input type="hidden" name="_method" value="PATCH">
+  <% end %>
+  <label for="band_name">Name:</label>
+  <input id="band_name" type="text" name="band[name]" value="<%= band.name %>">
+  <input type="submit" value="<%= button_text %>">
+</form>

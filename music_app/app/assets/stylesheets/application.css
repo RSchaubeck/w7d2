@@ -1,0 +1,72 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+#header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(106, 181, 206);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container-2 {
+    display: inherit;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.flex-container-2 a {
+    background-color: rgba(187, 56, 192, 0.2);
+    text-decoration: none;
+    font-size: 17px;
+    margin: 5px;
+    border-radius: 5px;
+    color: rgb(46, 45, 45);
+}
+
+.create-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.create-flex input {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.login-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.login-flex input {
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+#welcome {
+    font-size: 19px;
+    font-family: monospace;
+}
+
+.band_names {
+    font-size: 19px;
+}
